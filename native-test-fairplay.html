@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="content">
+        <h1>Native Fairplay</h1>
+        <div>
+            <input name="stream-url" placeholder="dash stream url">
+            <input name="vudrm-token" placeholder="vudrm token">
+            <button id="test-button">TEST</button>
+        </div>
+        <div id="vuplay-container">
+            <h1>
+                This demo works only with hls and browsers who support fairplay
+                (aka. safari)!
+            </h1>
+            <video
+                id="vuplay-video"
+                controls="controls"
+            ></video>
+        </div>
+        <div style="color: black;">
+            <pre style="white-space: pre-wrap" id="error"></pre>
+        </div>
+    </div>
+    <script src="native-test-fairplay.js"></script>
+</body>
+</html>

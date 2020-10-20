@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="tv-grid">
+        <div class="content-padding-tb content-padding-tb--half">
+            <div class="content">
+                <h1>Fairplay</h1>
+                <div>
+                    <input name="dash-stream-url" placeholder="hls stream url">
+                    <input name="vudrm-token" placeholder="vudrm token">
+                    <input name="content-id" placeholder="content id" value="TESTDRM">
+                    <button id="test-button">TEST</button>
+                </div>
+                <video id="video"
+                   width="640"
+                   poster="//shaka-player-demo.appspot.com/assets/poster.jpg"
+                   controls autoplay>
+                </video>
+                <div style="color: black;">
+                    <pre style="white-space: pre-wrap" id="error"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/3.0.5/shaka-player.compiled.debug.js"></script>
+    <script src="shaka-test-fairplay.js"></script>
+</body>
+</html>
